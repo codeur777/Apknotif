@@ -41,46 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBViXLiKkM52_sVzBYaDanQItTq-U2VigE',
-    appId: '1:623733229484:web:6deccac42d032084709c09',
-    messagingSenderId: '623733229484',
-    projectId: 'notificationtest-acf41',
-    authDomain: 'notificationtest-acf41.firebaseapp.com',
-    storageBucket: 'notificationtest-acf41.firebasestorage.app',
+    apiKey: 'A',
+    appId: 'A',
+    messagingSenderId: 'A',
+    projectId: 'A',
+    authDomain: 'A',
+    storageBucket: 'A',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDjRrM-NuB6nfbqb_PhACqVQdWj7EP_t9c',
-    appId: '1:623733229484:android:36c4451e71c3c6ab709c09',
-    messagingSenderId: '623733229484',
-    projectId: 'notificationtest-acf41',
-    storageBucket: 'notificationtest-acf41.firebasestorage.app',
+    apiKey: 'B',
+    appId: 'B',
+    messagingSenderId: 'B',
+    projectId: 'B',
+    storageBucket: 'B',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD2zu-_vOmdwerDKITCO0RbJqv7_ONnch0',
-    appId: '1:623733229484:ios:6ad0965933d7af77709c09',
-    messagingSenderId: '623733229484',
-    projectId: 'notificationtest-acf41',
-    storageBucket: 'notificationtest-acf41.firebasestorage.app',
-    iosBundleId: 'com.example.apknotif',
+    apiKey: 'C',
+    appId: 'C',
+    messagingSenderId: 'C',
+    projectId: 'C',
+    storageBucket: 'C',
+    iosBundleId: 'C',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyD2zu-_vOmdwerDKITCO0RbJqv7_ONnch0',
-    appId: '1:623733229484:ios:6ad0965933d7af77709c09',
-    messagingSenderId: '623733229484',
-    projectId: 'notificationtest-acf41',
-    storageBucket: 'notificationtest-acf41.firebasestorage.app',
-    iosBundleId: 'com.example.apknotif',
+    apiKey: 'D',
+    appId: 'D',
+    messagingSenderId: 'D',
+    projectId: 'D',
+    storageBucket: 'D',
+    iosBundleId: 'D',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBViXLiKkM52_sVzBYaDanQItTq-U2VigE',
-    appId: '1:623733229484:web:6e9c2a06fec78e94709c09',
-    messagingSenderId: '623733229484',
-    projectId: 'notificationtest-acf41',
-    authDomain: 'notificationtest-acf41.firebaseapp.com',
-    storageBucket: 'notificationtest-acf41.firebasestorage.app',
+    apiKey: 'E',
+    appId: 'E',
+    messagingSenderId: 'E4',
+    projectId: 'E',
+    authDomain: 'E',
+    storageBucket: 'E',
   );
 }
