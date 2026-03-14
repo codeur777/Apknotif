@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Home Page'),
+        backgroundColor: Colors.brown,
       ),
       body: Center(
         child: OutlinedButton(onPressed: (){ControllerPage().showNotification(id: 1 , title: 'Test Notification', body: 'Ceci est la toute première notification.');}, child: Text('Show Notification')),

@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:apknotif/services/controller_page.dart';
 import 'package:flutter/material.dart';
 
+
 class ApiPage extends StatefulWidget {
   const ApiPage({super.key});
 
@@ -35,7 +36,7 @@ class _ApiPageState extends State<ApiPage> {
 
   Future<void> fetchLessons() async {
     try {
-      final response = await http.get(Uri.parse('http://192.168.1.69/courses/')); {
+      final response = await http.get(Uri.parse('http://192.168.1.69:8000/courses/')); {
         if (response.statusCode == 200) {
           final data = jsonDecode(response.body);
           if (mounted) {
@@ -66,7 +67,22 @@ class _ApiPageState extends State<ApiPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Notifications app"),),
+      appBar: AppBar(title: Text("Notifications app"), backgroundColor: const Color.fromARGB(255, 224, 173, 155),),
+      body: isLoading
+          ? const Center(child: CircularProgressIndicator())
+          :lessons.isEmpty
+              ? const Center(child: Text('Aucune leçon disponible.'))
+          : ListView.builder(
+              itemCount: lessons.length,
+              itemBuilder: (context, index) {
+                final lesson = lessons[index];
+                return ListTile(
+                  title: Text(lesson['title']),
+                  subtitle: Text(lesson['description']),
+                );
+              },
+             )
+        ,
     );
   }
 }
